@@ -7,6 +7,7 @@ $ cd json-parsing
 Compiling the library:
 	
 $ make
+
 cc -c  jsmn.c -o jsmn.o
 ar rc libjsmn.a jsmn.o
 
@@ -24,6 +25,7 @@ Above "git status" command shows it compiled the libary and created archive
 
 Now, we can compile and run the simple example as, [ You can check Makefile ]
 $ make simple_example
+
 cc -c  example/simple.c -o example/simple.o
 cc  example/simple.o libjsmn.a -o simple_example
 
